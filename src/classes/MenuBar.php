@@ -77,7 +77,7 @@ class MenuBar implements HTMLObject{
 			if(CurrentUser::$admin){
 				echo "<a class='pure-button button-small button-hidden hidden' href='?t=Adm'><i class='fa fa-cogs fa-lg' style='float:left;'></i> ".Settings::_("menubar","admin")."</a>";
 			}
-			echo "<a class='pure-button button-small button-hidden hidden' href='?t=Acc'><i class='fa fa-wrench fa-lg' style='float:left;'></i> Edit </a>";
+			echo "<a class='pure-button button-small button-hidden hidden' href='?t=Acc'><i class='fa fa-wrench fa-lg' style='float:left;'></i> ".Settings::_("menubar","accounts")." </a>";
 			echo "<a class='pure-button button-small button-hidden hidden' href='?t=Logout'><i class='fa fa-sign-out fa-lg' style='float:left;'></i> ".Settings::_("menubar","logout")."</a>\n";
 			
 		}else{
